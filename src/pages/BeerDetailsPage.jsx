@@ -7,7 +7,7 @@ function BeerDetailsPage() {
   // Mock initial state, to be replaced by data from the Beers API. Store the beer info retrieved from the Beers API in this state variable.
   const { beerId } = useParams();
   const navigate = useNavigate();
-  const [beer, setBeer] = useState(beersJSON[0]);
+  const [beer, setBeer] = useState(null);
 
   const fetchBeers = async () => {
     try {
